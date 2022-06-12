@@ -1,0 +1,24 @@
+body {
+    font-weight: ;
+    text-align: center;
+}
+
+.name {
+    text-align: left;
+}
+
+.navigation {
+    position: static;
+    justify-content: right;
+}
+
+.Contacts {
+    width: 300px;
+    height: 50px;
+}
+
+.Photo {
+    height: 300px;
+    width: 500px;
+    float: right;
+}
