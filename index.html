@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>CV Andrew Pastor</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navigation">
+      <ul class="nav-list">
+        <li>
+          <a href="#contacts">Contacts</a>
+        </li>
+        <li>
+          <a href="#personalstatemen">Personal Statement</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#englishlanguage">English Language</a>
+        </li>
+        <li>
+          <a href="#codeexample">Code Example</a>
+        </li>
+        <li>
+          <a href="#firstproject">First Project</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Andrew Pastor</h1>
+    <div class="photo">
+      <img alt="My photo" src="photo.png">
+    </div>
+    <hr>
+    <div id="contacts" class="contacts">
+      <h2>Contacts for communication:</h2>
+      <ul class="contacts-list">
+        <li>Phone: +375295827421;</li>
+        <li>Email: pastorandrew91@gmail.com;</li>
+        <li>Discord: AndrewPastor(@andrewpastor);</li>
+      </ul>
+    </div>
+    <div id="personalstatemen">
+      <h2>Personal statement</h2>
+      Main goal: to become a quality full-stack developer.
+      <br><br>
+      I am balanced, non-conflict, have high moral qualities, positively influence the socio-psychological climate in
+      the team.
+      <br>
+      I strive to learn new areas of activity, constantly improve my skills.
+      Since 2016, I have been working in the laboratory of the research part of BSUIR as a junior researcher. I have a
+      high level of qualification in the profile of the laboratory.
+    </div>
+    <div id="education">
+      <h2>Education</h2>
+      2016 - graduated from BSUIR with a degree in metrology engineer.
+      <br>
+      2018 - graduated from the master's program with the title of master of technical sciences.
+      <br>
+      2021 - completed the "Fundamentals of Programming" courses on the Stepik educational platform.
+    </div>
+    <div id="skills">
+      <h2>Skills</h2>
+      C# - basic knowledge using OOP and ASP.NET Core;
+      <br>
+      Version control system Git - confident user;
+      <br>
+      Microsoft Visual Studio, Visual Studio Code - confident user.
+    </div>
+    <div id="englishlanguage">
+      <h2>English Language</h2>
+      2020 - completed English language courses at BSUIR at the level Pre-Intermediate (received a certificate);
+      <br>
+      2021 - for one semester at BSUIR lectured to foreign students in English.
+    </div>
+    <div id="codeexample">
+      <h2>Code Example</h2>
+      <pre>
+        public class Kata
+        {
+          public static string DuplicateEncode(string word)
+          {
+            string wo = word.ToLower();
+            string res = null;
+            int cnt = 0;
+            for (int i = 0; i < wo.Length; i++)
+            {
+              char a = wo[i];
+              for (int j = 0; j < wo.Length; j++)
+              {
+                char b = wo[j];
+                if (a == b)
+                {
+                  cnt++;
+                }
+              }
+              if (cnt > 1)
+              {
+                res = res + ")";
+              }
+              else res = res + "(";
+
+              cnt = 0;
+            }
+
+            word = res;
+            return word;
+          }
+        }
+      </pre>
+    </div>
+    <div id="firstproject">
+      <h2>My first project</h2>
+      <a href="https://github.com/AndrewPastor/rsschool-cv/blob/gh-pages/cv.md">Markdown CV</a>
+    </div>
+  </main>
+  <hr>
+  <footer>
+    <div>
+      <a href="https://github.com/AndrewPastor">My GitHub</a>
+    </div>
+    <div class="coppyright">
+      2022, Minsk
+    </div>
+    <div class="logo">
+      <a href="https://rs.school/js/"><img class="rs" src="https://rs.school/images/rs_school_js.svg"
+          alt="RS School"></a>
+    </div>
+  </footer>
+</body>
+
+</html>
