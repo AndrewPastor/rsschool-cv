@@ -1,20 +1,21 @@
 body {
-    background-color:blanchedalmond;
+    background-color: blanchedalmond;
     font-weight: 400;
     max-width: 900px;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 21px;
 }
+
 /*Header-start*/
 .navigation {
     display: flex;
 }
+
 .navigation .nav-list {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 4px;
-    margin-left: auto;
 }
 
 .nav-list li {
@@ -26,6 +27,7 @@ body {
 a {
     text-decoration: none;
 }
+
 /*Header-end*/
 /*Main-start*/
 
@@ -55,7 +57,22 @@ img {
 /*Main-end*/
 /*Footer-start*/
 footer {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px 60px 20px 60px;
 }
+
+.coppyright {
+    justify-self: center;
+}
+
+.logo {
+    justify-self: end;
+}
+
+.logo .rs {
+    width: 100px;
+}
+
 /*Footer-end*/
