@@ -87,35 +87,13 @@
     <div id="codeexample">
       <h2>Code Example</h2>
       <pre>
-        public class Kata
+        namespace HelloWorld
         {
-          public static string DuplicateEncode(string word)
-          {
-            string wo = word.ToLower();
-            string res = null;
-            int cnt = 0;
-            for (int i = 0; i < wo.Length; i++)
+          class Hello {         
+            static void Main(string[] args)
             {
-              char a = wo[i];
-              for (int j = 0; j < wo.Length; j++)
-              {
-                char b = wo[j];
-                if (a == b)
-                {
-                  cnt++;
-                }
-              }
-              if (cnt > 1)
-              {
-                res = res + ")";
-              }
-              else res = res + "(";
-
-              cnt = 0;
+            System.Console.WriteLine("Hello World!");
             }
-
-            word = res;
-            return word;
           }
         }
       </pre>
